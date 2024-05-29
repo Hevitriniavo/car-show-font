@@ -1,9 +1,10 @@
 /* eslint-disable @next/next/no-img-element */
-"use client";
 
 import { Button, Grid, TextField, Typography } from "@mui/material";
 import React, { useState } from "react";
 import bgImage from "../../../assets/images/1716955138152.jpg";
+import Logo from "../../../assets/images/City driver-bro.png";
+
 import Image from "next/image";
 import Link from "next/link";
 function page() {
@@ -44,6 +45,7 @@ function page() {
             alignItems={"center"}
             overflow={"hidden"}
             position={"relative"}
+
           >
             <Image src={bgImage} alt="bannier" height={400} />
             <Typography
@@ -73,6 +75,9 @@ function page() {
             alignItems={"center"}
             p={2}
           >
+            <Grid container item xs={12} justifyContent={'center'}>
+                <Image src={Logo} alt="logo" width={100}/>
+            </Grid>
             <Grid container item xs={12} justifyContent={'center'} >
                 <Typography variant="h5" fontWeight={'bold'}>
                     Welcome Back!
