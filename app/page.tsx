@@ -1,7 +1,16 @@
+import Footer from "./components/home/Footer";
+import Header from "./components/home/Header";
+import Main from "./components/home/Main";
+import Navigation from "./components/home/Navigation";
+
 export default function Home() {
-return (
-  <div>
-    <h1 className="text-3xl text-center underline">Hello,world !</h1>
-  </div>
-)
+  return (
+    <div>
+      <Navigation />
+      <Header />
+      <Main >
+      </Main>
+      <Footer />
+    </div>
+  )
 }
